@@ -1,0 +1,569 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.hero-section {
+  position: relative;
+
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  padding: 20px 60px;
+
+
+}
+
+header h1 {
+  color: white;
+}
+
+header span {
+  color: red;
+}
+
+
+
+header nav ul {
+
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+
+nav ul li a {
+
+  color: #ccc;
+  text-decoration: none;
+
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/* SLIDER */
+.slide {
+  
+  position: relative; 
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide::before {
+  
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.slide h2,
+.slide p,
+.slide button,
+.green,
+.red {
+  
+  position: relative;
+  z-index: 2;
+}
+
+
+
+
+
+
+.slide h2 {
+  color: white;
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+}
+
+.slide p {
+  color: #7ed957;
+  font-size: 30px;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.green {
+  background-color: #7ed957;
+  color: white;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+.red {
+  background-color: #ff5a5f;
+  color: white;
+  padding: 6px 14px;
+  font-weight: 600;
+  border-radius: 3px;
+  margin-bottom: 15px;
+  font-family: "Poppins", sans-serif;
+}
+
+/* SWIPER BUTTONS */
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  font-family: "Poppins", sans-serif;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.bars {
+
+  color: white;
+  font-size: 20px;
+  display: none;
+}
+
+
+
+.closebar {
+
+  display: flex;
+  justify-content: flex-end;
+  font-size: 30px;
+}
+
+.sidebar {
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  background-color: white;
+  transition: 0.3s;
+  padding: 10px;
+  transform: translateX(100%);
+
+
+}
+
+.sidebar nav ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.sidebar nav ul li {
+
+  margin: 10px 0;
+}
+
+.sidebar nav ul li a {
+  display: block;
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+  text-align: center;
+}
+
+
+.search-box {
+
+  background-color: #3d5670;
+  padding: 30px;
+  border-radius: 5px;
+}
+
+.label {
+
+  color: #9fb3c8;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.search-btn {
+  background-color: #669c19;
+  border: none;
+  color: white;
+  font-weight: 600;
+}
+
+
+.search-wrapper {
+
+  position: absolute;
+  bottom: -60px;
+  z-index: 100;
+  width: 100%;
+}
+
+.propertycard {
+
+  padding: 50px;
+  background-color: #f9f9f9;
+  margin-top: 100px;
+
+
+}
+
+.propertycard img:hover {
+
+  transform: scale(1.1);
+}
+
+.propertycard h5 {
+
+  font-size: 18px;
+}
+
+
+.heart-icon {
+
+  width: 36px;
+  height: 36px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.heart-icon:hover {
+
+  background-color: red;
+  color: white;
+}
+
+
+.why-choose-us {
+
+  padding: 50px;
+
+
+}
+
+.why-choose-us h2 {
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.why-choose-us p {
+
+  margin-top: 20px;
+  color: gray;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+  text-align: center;
+}
+
+.recent-blog {
+
+  padding: 50px;
+  background-color: #f9f9f9;
+
+}
+
+.recent-blog h2 {
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.recent-blog p {
+
+  margin-top: 20px;
+  color: gray;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+
+.our-agents {
+
+  padding: 50px;
+
+}
+
+
+.our-agents h2 {
+
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.our-agents p {
+
+  margin-top: 20px;
+  color: gray;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+
+.footer {
+
+  background-color: #333333;
+  color: #aaa;
+
+}
+
+.footer .container {
+
+  padding: 30px;
+}
+
+
+.footer h5 {
+  color: #fff;
+}
+
+.footer-line {
+  border: 1px solid white;
+  width: 30px;
+  opacity: 1;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin-bottom: 10px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-icons a {
+  color: #aaa;
+  font-size: 18px;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  border-top: 2px solid white;
+  padding: 20px;
+  margin-top: 30px;
+  font-size: 18px;
+
+
+}
+
+.banner {
+
+  height: 100vh;
+  position: relative;
+}
+
+
+.banner::before{
+
+   content: '';
+   position: absolute;
+   inset: 0;
+   background: rgba(0, 0, 0, 0.5);
+   z-index: 1;
+}
+
+
+.banner h2{
+
+  position: relative;
+  z-index: 2;
+}
+
+
+.form-section {
+
+  padding: 50px;
+  background-color: white;
+}
+
+.form-section label {
+
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+
+
+
+@media(max-width:1024px) {
+
+  .slide,
+  .banner {
+
+    height: 700px;
+  }
+
+}
+
+
+
+@media (max-width: 540px) {
+
+  .slide {
+    height: 60vh;
+  }
+
+  .slide h2,
+  .slide p {
+    font-size: 20px;
+  }
+
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next {
+    transform: scale(0.8);
+  }
+
+  nav ul li a {
+
+    display: none;
+  }
+
+  header {
+
+    padding: 10px;
+
+  }
+
+  .bars {
+
+    display: block;
+  }
+
+  .sidebar.active {
+
+    transform: translateX(0);
+  }
+
+
+
+
+  .why-choose-us h2,
+  .recent-blog h2,
+  .our-agents h2 {
+
+    font-size: 30px;
+  }
+
+
+  .footer .container {
+
+    padding: 20px;
+  }
+
+  .banner {
+
+    height: 50vh;
+  }
+
+
+
+  .search-wrapper {
+
+    position: relative;
+    bottom: 40px;
+
+  }
+
+  .about h2,
+  .about p {
+
+    text-align: center;
+  }
+
+  .propertycard {
+
+    padding: 10px;
+    margin-top: 0px;
+
+
+  }
+
+  .form-section {
+
+    padding: 10px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
